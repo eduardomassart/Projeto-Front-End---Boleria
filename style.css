@@ -1,0 +1,29 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    height: 500px;
+    background-color: gray;
+}
+
+.logo {
+    width: 30%;
+}
+
+.navegacao{
+    display: inline-block;
+}
+
+.navegacao a{
+    display: inline-block;
+}
+
+.redes-sociais {
+    display: inline-block;
+    width: 30%;
+}
+
+.redes-sociais img {
+    width: 15%;
+}
