@@ -1,29 +1,53 @@
+:root {
+    --light-green-bg-color: #ceecd4;
+    --tittle-color: #000000;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
-    height: 500px;
-    background-color: gray;
+    height: 300px;
+    background-color: var(--light-green-bg-color);
+    padding: 20px 0;
 }
 
 .logo {
-    width: 30%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    margin: 0 3% 0 9%;
+
 }
 
-.navegacao{
+.navegacao {
     display: inline-block;
+    position: relative;
+    vertical-align: top;
+    top: 60%;
+    margin: 0 3%;
 }
 
-.navegacao a{
+.navegacao a {
     display: inline-block;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--tittle-color);
+    margin-right: 30px;
 }
 
 .redes-sociais {
     display: inline-block;
-    width: 30%;
+    width: 180px;
+    position: relative;
+    vertical-align: top;
+    top: 55%;
+    margin-left: 3%;
 }
 
 .redes-sociais img {
-    width: 15%;
+    width: 20%;
+    margin: 10px;
 }
