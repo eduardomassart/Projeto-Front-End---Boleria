@@ -3,12 +3,16 @@
     --tittle-color: #000000;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
-    height: 180px;
+    height: 200px;
     background-color: var(--light-green-bg-color);
     padding-top: 20px;
     text-align: center;
