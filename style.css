@@ -1,6 +1,9 @@
 :root {
-    --light-green-bg-color: #ceecd4;
+    --light-green-bg-color: #e0f3e4;
+    --medium-green-bg-color: #bce5c4;
+    --dark-green-bg-color: #97d7a4;
     --tittle-color: #000000;
+    --box-ancor-bg-color: #3C4A3E;
 }
 
 * {
@@ -13,7 +16,7 @@ body {
 
 header {
     height: 200px;
-    background-color: var(--light-green-bg-color);
+    background-color: var(--medium-green-bg-color);
     padding-top: 20px;
     text-align: center;
 }
@@ -21,7 +24,7 @@ header {
 .logo {
     height: 100%;
     position: relative;
-    margin-right: 3%;
+    margin-right: 10%;
 
 }
 
@@ -30,7 +33,7 @@ header {
     position: relative;
     vertical-align: top;
     top: 60%;
-    margin: 0 0 0 3%;
+    margin-right: 8%;
 }
 
 .navegacao a {
@@ -48,13 +51,15 @@ header {
     position: relative;
     vertical-align: top;
     top: 55%;
-    margin-left: 3%;
 }
 
 .redes-sociais img {
     width: 20%;
     margin: 5%;
 }
+
+
+
 
 .banner-produtos {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagens/banner-produtos.jpg);
@@ -80,4 +85,54 @@ header {
     top: 40%;
     color: white;
     font-size: 2em;
+}
+
+
+
+
+.container {
+    background-color: var(--light-green-bg-color);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.produtos {
+    margin: 20px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    width: 20%;
+    height: 350px;
+    background-color: var(--dark-green-bg-color);
+    border-radius: 15px;
+    margin: 15px 10px;
+    padding: 10px;
+}
+
+.produtos li img {
+    width: 70%;
+}
+
+.produtos li h2 {
+    height: 2.6em;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.produtos li a {
+    background-color: var(--box-ancor-bg-color);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.produtos li a:hover {
+    color: var(--box-ancor-bg-color);
+    background-color: var(--medium-green-bg-color);
+    border: solid 1px var(--box-ancor-bg-color);
 }
