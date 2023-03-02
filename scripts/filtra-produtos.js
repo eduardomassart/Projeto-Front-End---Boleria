@@ -4,13 +4,10 @@ function atualizouFiltro(){
     var produtos = document.querySelectorAll(".produto");
 
     var valorFiltro = filtro.options[filtro.selectedIndex].value;
-    console.log(valorFiltro);
 
     for (let i = 0; i < produtos.length; i++) {
         var produto = produtos[i];
         var classProdutos = produto.classList;
-
-        console.log(classProdutos[classProdutos.length - 1]);
         
         produto.classList.remove("hide");
 
