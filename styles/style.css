@@ -5,10 +5,13 @@
     --tittle-color: #000000;
     --box-ancor-bg-color: #3C4A3E;
     --contraste-main-color: #ff786e;
+
     --primary-font: 3rem;
     --secondary-font: 2rem;
     --terciary-font: 1.5rem;
     --quaternary-font: 1.2rem;
+
+    --font-document: 'Source Sans Pro', sans-serif;
 }
 
 * {
@@ -16,7 +19,7 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--font-document);
 }
 
 header {
@@ -51,6 +54,10 @@ header {
     width: 15%;
     display: flex;
     justify-content: space-between;
+}
+
+.redes-sociais p {
+    display: none;
 }
 
 .redes-sociais a {
@@ -291,7 +298,7 @@ footer p {
     letter-spacing: 1px;
     font-size: var(--quaternary-font);
     font-weight: 600;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--font-document);
     transition: 0.5s;
 }
 
@@ -319,20 +326,84 @@ footer p {
 .form-contact input::-webkit-input-placeholder, .form-contact textarea::-webkit-input-placeholder {
     font-size: var(--quaternary-font);
     font-weight: 600;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--font-document);
 }
 .form-contact input:-ms-input-placeholder, .form-contact textarea:-ms-input-placeholder {
     font-size: var(--quaternary-font);
     font-weight: 600;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--font-document);
 }
 .form-contact input:-moz-placeholder, .form-contact textarea:-moz-placeholder {
     font-size: var(--quaternary-font);
     font-weight: 600;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--font-document);
 }
 .form-contact input::-moz-placeholder, .form-contact textarea::-moz-placeholder {
     font-size: var(--quaternary-font);
     font-weight: 600;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--font-document);
+}
+
+/* Responsividade */
+
+@media (max-width: 860px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 300px;
+    }
+
+    .navegacao {
+        width: 70%;
+        justify-content:center;
+        padding: 0 0 30px 0;
+    }
+
+    .redes-sociais {
+        width: 70%;
+        justify-content: center;
+        gap: 4%;
+        background-color: var(--light-green-bg-color);
+        padding: 1%;
+        border-radius: 15px;
+    }
+
+    .redes-sociais p {
+        display: inline-block;
+        font-size: var(--terciary-font);
+        font-family: var(--font-document);
+        align-self: center;
+    }
+
+    .redes-sociais a {
+        display: flex;
+        width: 25px;
+    }
+
+    .redes-sociais img {
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 580px) {
+    :root {
+        --primary-font: 2.5rem;
+    --secondary-font: 1.5rem;
+    --terciary-font: 1.2rem;
+    --quaternary-font: 1.0rem;
+    }
+
+    .input-datas {
+        margin-right: 30px;
+    }
+
+    #enviar {
+        width: 70%;
+    }
+
+    .logo, footer img {
+        width: 250px;
+    }
 }
